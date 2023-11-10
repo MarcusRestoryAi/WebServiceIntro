@@ -4,12 +4,12 @@ import com.example.WebServiceIntro.Entity.Message;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/messages")
+//@RequestMapping("/messages")
 public class ChatController {
 
     private String messageLog = "Hello world, first message";
 
-    @GetMapping("/getMessage")
+    @GetMapping("/message")
     public String getMessage() {
         return messageLog;
     }
@@ -20,7 +20,7 @@ public class ChatController {
         return "Message Recieved: " + message;
     }
 
-    @PostMapping("/postMessage")
+    @PostMapping("/message")
     public String postMessagePayload(
             @RequestBody Message message
     ) {
