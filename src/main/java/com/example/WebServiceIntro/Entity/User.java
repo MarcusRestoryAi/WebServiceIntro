@@ -14,6 +14,10 @@ public class User {
     private String userName;
     private String password;
 
+    static public User getUnknownUser() {
+        return new User("Unknown", "Pass");
+    }
+
     public User() {
     }
 
