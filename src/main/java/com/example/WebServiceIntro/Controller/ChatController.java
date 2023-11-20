@@ -4,7 +4,7 @@ import com.example.WebServiceIntro.Entity.Message;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-//@RequestMapping("/messages")
+@RequestMapping("/messages")
 public class ChatController {
 
     private String messageLog = "Hello world, first message";
